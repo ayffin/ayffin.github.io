@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BlocFlix
-thumbnail-path: "img/blocflix.png"
-short-description: BlocFlix is a Netflix replica for finding the best movies and watching them online.
+title: BlocJams
+thumbnail-path: "img/blocJams.png"
+short-description: Blocjams is a Netflix replica for finding the best movies and watching them online.
 
 ---
 
 {:.center}
-![]({{ site.baseurl }}/img/blocflix.png)
+![]({{ site.baseurl }}/img/blocJams.png)
 
 ## Explanation
 
