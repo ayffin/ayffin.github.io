@@ -49,6 +49,7 @@ In the first part of project we utilized JavaScript for animation and DOM Script
 ![]({{ site.baseurl }}/img/album.png)
 
 - Another challenge we encounter was to show different states  for song rows we had to set the different states for the number/play/pause button. In the first part For our player Bar we created a lot of functions which includes play/pause function also Mouseover and Mouse-leave event listeners function and we set up the click behavior as well.
+
 <script src="https://gist.github.com/anonymous/c6b888e9401206099ceab52b348eb221.js"></script>
 
 

@@ -25,20 +25,20 @@ short-description: Bloc Chat is a simple Chat room which doesn't require registr
 
  Next challenge to allow visiting users to create room, which led to creation of an ‘Add Room’ button. which when clicked launches a Modal, where user can create room. using UI Bootstrap's service made it possible to create modal and with the help of $add() method on the $firebase array I was able to create rooms.
 
-```
-this.open = function() {
-var modalInstance = $uibModal.open({
-templateUrl: '/templates/modal.html',
-controller: 'ModalInstanceCtrl as modalInstance'
+{% highlight js %}
+  this.open = function() {
+    var modalInstance = $uibModal.open({
+      templateUrl: '/templates/modal.html',
+      controller: 'ModalInstanceCtrl as modalInstance'
 
-});
+      });
 
-modalInstance.result.then(function(room) {
+  modalInstance.result.then(function(room) {
 
-Room.add(room);
-console.log(Room.all);
-});
-```
+    Room.add(room);
+    console.log(Room.all);
+  });
+{% endhighlight %}
 
 
  ---
@@ -55,25 +55,26 @@ console.log(Room.all);
  The next challenge was to create user since with out user recipient of message won't know who the message are from, which led to creation of another modal which will be displayed right as application starts and unless user add their name they won't be able to access chatroom.
 
 
- ```
+{% highlight js %}
  (function() {
-   function BlocChatCookies($cookies, $uibModal) {
-     var currentUser = $cookies.get('blocChatCurrentUser');
-     console.log(currentUser);
-     if (!currentUser || currentUser === '') {
-       $uibModal.open({
+      function BlocChatCookies($cookies, $uibModal) {
+         var currentUser = $cookies.get('blocChatCurrentUser');
+          console.log(currentUser);
+         if (!currentUser || currentUser === '') {
+           $uibModal.open({
 
-         templateUrl: '/templates/user.html',
-         controller: 'UserInstanceCtrl as user'
-       });
+             templateUrl: '/templates/user.html',
+             controller: 'UserInstanceCtrl as user'
+           });//open
 
-     }
-   }
-   angular
-     .module('blocChat')
-     .run(['$cookies', '$uibModal', BlocChatCookies]);
+         }
+       }//BlocChatCookies
+
+       angular
+         .module('blocChat')
+         .run(['$cookies', '$uibModal', BlocChatCookies]);
  })();
- ```
+ {% endhighlight %}
 
 
 
