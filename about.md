@@ -7,6 +7,4 @@ feature-img: "img/color.png"
 
 Hi, I'm Aifi.
 
-I'm a fullstack developer from New York. I specialize in web and app design, front end development, user experience, 
-
-Seeking to be inspired, to envision the unlikely, to work hard for things that are worth it, and to be surrounded by those who bring out the best in me.
+I'm a fullstack web developer from New York. I specialize in web and app design, front end development, user experience. Some languages I frequently find myself using include HTML5, CSS3, JavaScript (jQuery, Angular.js)and ruby. I am always passionate about learning new things.
