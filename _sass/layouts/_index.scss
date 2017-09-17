@@ -7,7 +7,8 @@
   font-size: 1.2em;
   text-align: center;
   color: $text-color;
-  background-color: rgba(100,150,122,.3);
+  background-color: rgba(36, 14, 14, 0.8);
+      transform: skewx(10deg);
   background-position:center center;
   .site-title {
     display:block;
@@ -96,7 +97,9 @@
         display:block;
         text-align: center;
         margin:0 auto 1%;
+        border-radius: 8px;
       }
+
     }
     .project-description {
       width:100%;

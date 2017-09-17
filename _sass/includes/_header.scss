@@ -4,7 +4,7 @@
   border-top:5px solid $header-desc-background-color;
   display: inline-block;
   width: 100%;
-  background-color: rgba(41, 97, 131, 0.4);
+    background-color: rgb(32, 152, 209);
 
   a {
     color: $header-link-color;
@@ -38,6 +38,9 @@
       display: inline;
       float: left;
       margin-left: 1.4em;
+    }
+    li:hover{
+      border-bottom: #333 solid 1px;
     }
     @media (max-width: 1100px) {
       ul {

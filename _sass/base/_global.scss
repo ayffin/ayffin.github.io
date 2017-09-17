@@ -19,6 +19,8 @@ body {
   font-family: $font-family-main;
   font-size: $font-size;
   word-wrap: break-word;
+        background-color: rgb(249, 249, 249);
+        font-style: italic;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;
@@ -107,6 +109,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 // Responsive media
 iframe, img, embed, object, video {
   max-width: 100%;
